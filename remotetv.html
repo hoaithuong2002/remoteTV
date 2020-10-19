@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điều khiển tv</title>
+
+</head>
+<body>
+<script src="TV.js"></script>
+<script src="remote.js"></script>
+<script>
+    let tv1 = new TV(1, 50, true);
+    console.log(tv1);
+    let remote1 = new Remote(10);
+    alert(remote1);
+
+    remote1.changeChannel(tv1, 50);
+    remote1.changeStatus(tv1);
+    alert(tv1);
+</script>
+</body>
+</html>
